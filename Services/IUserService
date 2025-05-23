@@ -1,0 +1,15 @@
+using MyMvcApp.Models; // Add this line or update with the correct namespace for User
+
+namespace MyMvcApp.Services
+{
+    public interface IUserService
+    {
+        // Example methods - adjust as needed for your app
+        IEnumerable<User> GetAll();
+        User? GetById(int id);
+        void Create(User user);
+        void Update(User user);
+        void Delete(int id);
+        IEnumerable<User> Search(string searchTerm);
+    }
+}
